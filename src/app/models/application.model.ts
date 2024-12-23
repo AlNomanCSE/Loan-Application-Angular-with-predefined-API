@@ -51,4 +51,9 @@ export class Loan {
         this.emi = 0;
     }
 }
-  
+
+export interface ApplicationApiResponse {
+  Message: string,
+  Result: true,
+  Data: string
+}
