@@ -14,7 +14,7 @@ export class Application {
     employmentStatus: string;
     creditScore: number;
     assets: string;
-    dateApplied: string;
+    dateApplied: Date;
     Loans:Loan[] 
     constructor() {
         this.applicantID = 0;
@@ -32,7 +32,7 @@ export class Application {
         this.employmentStatus = '';
         this.creditScore = 0;
         this.assets = '';
-        this.dateApplied = '';
+        this.dateApplied = new Date;
         this.Loans = [];
     }
 }
