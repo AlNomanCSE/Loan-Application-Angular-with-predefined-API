@@ -57,6 +57,8 @@
                           <label class="block text-sm mb-1">Employment Status:</label>
                           <select name="employmentStatus" [(ngModel)]="application.employmentStatus" class="w-full border border-gray-300 rounded p-2">
                               <option value="employed">Employed</option>
+                              <option value="unemployed">Unemployed</option>
+                              <option value="student">Student</option>
                           </select>
                       </div>
                       <div>
@@ -72,7 +74,7 @@
   
                   
                     <div class="mt-6">
-                        <button type="submit" class="relative bg-blue-500 text-white px-6 py-2 rounded overflow-hidden transition-all duration-300 ease-in-out hover:bg-blue-600 hover:shadow-md before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:opacity-20 before:-translate-x-full hover:before:translate-x-full before:transition-transform before:duration-300">Submit Application</button>
+                        <button type="submit" (click)="onSubmit()" class="relative bg-blue-500 text-white px-6 py-2 rounded overflow-hidden transition-all duration-300 ease-in-out hover:bg-blue-600 hover:shadow-md before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:opacity-20 before:-translate-x-full hover:before:translate-x-full before:transition-transform before:duration-300">Submit Application</button>
                     </div>
                   
               </div>
